@@ -9,17 +9,25 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="media/css/materialize.min.css"  media="screen,projection"/>
-    
+    <link rel="stylesheet" href="media/styles.css">
 
 </head>
+<style>
+    @font-face {
+        font-family: Roboto-Medium;
+        src: url(media/fonts/Roboto-Medium.ttf);
+    }
+</style>
 <body>
+
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="js/materialize.min.js"></script>
 
+    <h1 class="titulo">Pagina de registro</h1>
 
-    <div class="row">
+    <div class="row recuadro ">
         <form class="col s12">
-          <div class="row">
+          <div class="row ">
             <div class="input-field col s6">
               <input placeholder="Nombre" id="first_name" type="text" class="validate">
               <label for="first_name">Nombre</label>
@@ -41,18 +49,17 @@
               <label for="email">Email</label>
             </div>
           </div>
-          <div class="row">
-            <div class="col s12">
-              Nombre de usuario:
-              <div class="input-field inline">
-                <input id="email_inline" type="email" class="validate">
-                <label for="email_inline">Usuario</label>
-                <span class="helper-text" data-error="wrong" data-success="right">Selecciona un nombre de usuario</span>
-              </div>
-            </div>
-          </div>
         </form>
       </div>
+      <br>
+        <div class="center-align ">
+        <a class="waves-effect waves-light btn-small z-depth-5"><i class="material-icons left">send</i>Registrar</a>
+        </div>
+        <br>
+        <div class="center-align">
+            <a class="waves-effect waves-light btn-small z-depth-5"><i class="material-icons left">clear</i>Eliminar</a>
+            <a class="waves-effect waves-light btn-small z-depth-5"><i class="material-icons left">cloud</i>Iniciar sesión</a>      
+        </div>
 
 </body>
 </html>
